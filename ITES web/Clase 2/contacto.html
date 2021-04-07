@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>ITES PW</h1>
+        <p>
+            <a href="index.html">INICIO</a> | 
+            <a href="contacto.html">CONTACTO</a> | 
+            <a>NOSOTROS</a> | 
+            <a>SERVICIOS</a>
+        </p>
+    </header>
+    <hr>
+    <h2><u>Formulario de Contacto</u></h2>
+    <form>
+        <label><b>Nombre</b></label>
+        <input type="text" name="nombre" required>
+        <br><br>
+
+        <label><b>Teléfono</b></label>
+        <input type="number" name="telefono" required>
+        <br><br>
+
+        <label><b>Edad</b></label>
+        <select>
+            <option>Menos de 18</option>
+            <option>18 a 23</option>
+            <option>24 a 30</option>
+            <option>31 o Más</option>
+        </select>
+        <br><br>
+
+        <!-- 
+        PROPIEDADES de TEXTAREA:
+        cols        define el ancho del area, se mide en caracteres, default=20.
+        maxlength   la cantidad de caracteres que se pueden escribir, default = inf.
+        required    le avisa al usuario que este campo es obligatorio.
+        placeholder ayuda o da pistas al usuario
+        (...)
+        -->
+        <textarea cols="32" rows="5" placeholder="Observaciones" required></textarea>
+        <br>
+
+        <button>Enviar</button>
+    </form>
+</body>
